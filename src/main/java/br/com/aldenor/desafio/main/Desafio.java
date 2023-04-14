@@ -25,9 +25,9 @@ public class Desafio {
             }
         }
 
-        for(int line = 0; line<=(matrizSize-1); line++) {
-            for (int column = 0; column <= (matrizSize - 1); column++) {
-                System.out.print("["+matriz[line][column]+"] ");
+        for(int[] line : matriz) {
+            for (int value : line) {
+                System.out.print("["+value+"] ");
             }
             System.out.println();
         }
